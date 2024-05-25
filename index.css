@@ -11,7 +11,7 @@ body {
     width: 390px;
     height: 844px;
     margin: auto;
-    border: 1px solid red;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 25px;
 }
 
@@ -54,16 +54,16 @@ body {
     gap: 220px;
     justify-content: space-between;
     padding: 14px 35px;
-    align-items: center; 
+    align-items: center;
     top: 0;
-    color:white;
+    color: white;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
 
 
 /* .user-info */
-.main-container > .user-info{
+.main-container>.user-info {
     position: absolute;
     z-index: 3;
     top: 0;
@@ -73,24 +73,188 @@ body {
     align-items: center;
     padding: 40px 20px;
 }
-.main-container > .user-info > div{
+
+.main-container>.user-info>div {
     display: flex;
     align-items: center;
 }
-.main-container > .user-info > div:first-child{
+
+.main-container>.user-info>div:first-child {
     font-size: 22px;
     font-weight: bold;
 }
-.main-container > .user-info > div:nth-child(2){
+
+.main-container>.user-info>div:nth-child(2) {
     font-size: 17px;
     font-weight: 500;
     color: #FFF;
     font-family: "Space Grotesk", sans-serif;
 }
-.main-container > .user-info > div:nth-child(3){
+
+.main-container>.user-info>div:nth-child(3) {
     background: white;
     border-radius: 50%;
     padding: 5px;
 }
 
+/* .user-info end */
+.main-container>.user-profile {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    padding: 0 26px;
+}
 
+.main-container>.user-profile>div:first-child>img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    padding: 4px;
+    fill: #FFF;
+    background-color: white;
+}
+
+.main-container>.user-profile>div:nth-child(2)>div {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: #AB1AA1;
+    font-weight: bold;
+}
+
+.main-container>.user-profile>div:nth-child(2)>p {
+    color: #8C8C8C;
+    margin-top: -20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+.main-container>.user-profile>div:nth-child(3) {
+    border-left: 1px solid #9E9D9D;
+    height: 46px;
+}
+
+.main-container>.user-profile>div:nth-child(4)>div {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: #FF487F;
+    font-weight: bold;
+}
+
+.main-container>.user-profile>div:nth-child(4)>p {
+    color: #8C8C8C;
+    margin-top: -20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+/* username-info  */
+.main-container>.username-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 16px 22px;
+
+}
+
+.main-container>.username-info>div p {
+    color: #592EBF;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.main-container>.username-info>div button {
+    width: 116px;
+    height: 28px;
+    border-radius: 6px;
+    background: #592EBF;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 0px 0px #AB1AA1;
+    cursor: pointer;
+
+}
+
+/* .user-tag */
+.main-container>.user-tag {
+    padding: 16px 30px;
+    color: #4971FD;
+    font-size: 14px;
+    margin-top: -50px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* user-bio  */
+.main-container>.user-bio {
+    width: 331px;
+    margin: auto;
+}
+
+.main-container>.user-bio p {
+    color: #1A3365;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-top: -18px;
+}
+
+/* reels-menu-section */
+.main-container>.reels-menu-section {
+    width: 390px;
+    height: 44px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* reels-section cards */
+.main-container>.reels-section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: -10px;
+    position: relative;
+    z-index: 2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+.main-container>.reels-section>div:first-child{
+    border-top: 1px solid #592EBF;
+}
+
+.main-container>.reels-section>div {
+    border: 1px solid white;
+    width: 128px;
+    height: 202px;
+    background: #D9D9D9;
+}
+
+/* footer-section  */
+.main-container > .footer-section{
+    width: 370px;
+    margin-top: -20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: #B4B4B4;;
+    z-index: 1;
+}
+.main-container > .footer-section > div{
+    margin-top: 20px;
+}
