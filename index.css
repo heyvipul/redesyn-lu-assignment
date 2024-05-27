@@ -19,7 +19,7 @@ body {
 .main-container>.background-img {
     position: relative;
     width: 390px;
-    height: 315px;
+    height: 250px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     overflow: hidden;
@@ -105,7 +105,7 @@ body {
     align-items: center;
     position: absolute;
     z-index: 3;
-    top: 35%;
+    top: 25%;
     padding: 0 26px;
 }
 
@@ -158,7 +158,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 16px 22px;
 
 }
@@ -218,13 +218,20 @@ body {
 /* reels-section cards */
 .main-container>.reels-section {
     display: grid;
+    height: 302px;
     grid-template-columns: repeat(3,1fr);
     margin-top: -10px;
     position: relative;
     z-index: 2;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    overflow: hidden;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+.main-container>.reels-section::-webkit-scrollbar {
+    display: none;  
 }
 .main-container>.reels-section>div:first-child{
     border-top: 1px solid #592EBF;
@@ -254,7 +261,8 @@ body {
     font-size: 13px;
     color: #B4B4B4;;
     z-index: 1;
+    text-align: center;
 }
 .main-container > .footer-section > div{
-    margin-top: 20px;
+    margin-top: 30px;
 }
